@@ -1,8 +1,8 @@
-# 🤖 ChatGroq PDF QA Bot
+ 🤖 ChatGroq PDF QA Bot
 
 An interactive Streamlit web app that uses **LangChain**, **Groq LLM (Mixtral)**, and **FAISS** to let you ask questions from a directory of PDF documents.
 
-## 🚀 Features
+ 🚀 Features
 
 - Upload PDFs in `RL/` folder
 - Automatically creates embeddings using OpenAI
@@ -12,7 +12,7 @@ An interactive Streamlit web app that uses **LangChain**, **Groq LLM (Mixtral)**
 
 ---
 
-## 📂 Folder Structure
+📂 Folder Structure
 
 chatgroq-pdf-qa/
 ├── app.py
