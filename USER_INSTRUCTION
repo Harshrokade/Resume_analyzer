@@ -1,0 +1,67 @@
+Great! Here's a clear **"👤 USER INSTRUCTIONS"** section you can directly paste into your `README.md` file or show on your app for users who'll run it:
+
+---
+
+## 👤 USER INSTRUCTIONS
+
+Follow these steps to use the ChatGroq PDF QA app:
+
+### 📥 Step 1: Add Your PDFs
+
+- Place your PDF files inside the `RL/` folder.
+- These files will be used to create vector embeddings for question answering.
+
+---
+
+### ⚙️ Step 2: Run the Application
+
+```bash
+streamlit run app.py
+```
+
+This will open the app in your default browser at `http://localhost:8501`.
+
+---
+
+### 🧠 Step 3: Create Document Embeddings
+
+- Click the **"Create Document Embeddings"** button.
+- The app will process your PDFs and prepare them for querying using embeddings and FAISS.
+
+> 📌 This step only needs to be done once unless you change the PDFs.
+
+---
+
+### ❓ Step 4: Ask Your Questions
+
+- Enter your question in the input field (e.g., *"What is the main objective of the document?"*).
+- The app will:
+  - Retrieve the most relevant chunks from the PDFs
+  - Use the **Groq LLM (Mixtral)** to generate an accurate answer
+- You’ll see:
+  - The final **answer**
+  - The **documents used for reference** (in expandable section)
+  - The **response time** for the answer
+
+---
+
+### 🔁 Optional: Update or Add New PDFs
+
+If you add or replace files in the `RL/` folder:
+- Click **"Create Document Embeddings"** again to update the vector store.
+
+---
+
+### 🧑‍💻 Troubleshooting
+
+- 🔑 **API Keys Not Found?** Make sure your `.env` file exists and includes:
+  ```env
+  OPENAI_API_KEY=your_key_here
+  GROQ_API_KEY=your_key_here
+  ```
+
+- 🧠 **Error: "Please create document embeddings first!"**
+  → Click the **"Create Document Embeddings"** button.
+
+---
+
